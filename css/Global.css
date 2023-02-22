@@ -1,0 +1,20 @@
+:root {
+	--white: rgb(184, 182, 182);
+	--black: rgb(30, 30, 30);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font: normal 18px 'Open Sans', sans-serif;
+	background: var(--black);
+	color: var(--white);
+}

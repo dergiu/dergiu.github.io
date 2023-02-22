@@ -1,0 +1,199 @@
+/* ******************************************* */
+/* Foto + descrizione */
+/* ******************************************* */
+.center {
+	position: relative;
+	text-align: center;
+}
+
+.center>.divfoto {
+	width: 495px;
+	height: 690px;
+	display: inline-block;
+}
+
+.center>.divfoto>.cornice {
+	--s: 15px;
+	padding: var(--s);
+	border: calc(2 * var(--s)) solid rgba(0, 0, 0, 0);
+	outline: 2px solid rgba(231, 231, 231, 0.8392156863);
+	outline-offset: calc(-1 * var(--s));
+	background: conic-gradient(from 90deg at 2px 2px, rgba(0, 0, 0, 0) 25%, rgba(231, 231, 231, 0.8392156863) 0);
+	height: 600px;
+}
+
+.center>.divfotoTesto {
+	width: 495px;
+	height: 690px;
+	display: inline-block;
+}
+
+
+/* ******************************************* */
+/* Aggiustamenti */
+/* ******************************************* */
+
+/* schermi piccoli */
+@media (min-width: 50px) {
+
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+	.navigationalButton>.a {
+		font-size: 15px;
+	}
+
+	.center {
+		width: 80%;
+	}
+
+	.center>.divfoto>.cornice {
+		height: 600px;
+	}
+
+	.center>.divfotoTesto {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.center>.divfotoTesto {
+		font-size: 15px;
+	}
+
+	.timeline {
+		margin-left: 0px;
+	}
+
+	.timeline-event-thumbnail {
+		font-size: 25px;
+	}
+
+	.descrizioneTemporale {
+		font-size: 15px;
+	}
+
+}
+
+/* iphone */
+@media (min-width: 961px) {
+
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+	.navigationalButton>.a {
+		font-size: 25px;
+	}
+
+	.center {
+		width: 80%;
+	}
+
+	.center>.divfoto>.cornice {
+		height: 900px;
+	}
+
+	.center>.divfotoTesto {
+		width: 100%;
+		margin-left: 100px;
+	}
+
+	.center>.divfotoTesto {
+		font-size: 30px;
+	}
+
+	.timeline {
+		margin-left: 130px;
+	}
+
+	.timeline-event-thumbnail {
+		font-size: 40px;
+	}
+
+	.descrizioneTemporale {
+		font-size: 30px;
+	}
+
+}
+
+/* ipad 12.9*/
+@media (min-width: 1200px) {
+
+	/* portatili */
+	.navigationalButton>.a {
+		font-size: 18px;
+	}
+
+	.center {
+		width: 100%;
+	}
+
+	.center>.divfoto>.cornice {
+		height: 600px;
+	}
+
+	.center>.divfotoTesto {
+		width: 100%;
+		width: 495px;
+		height: 690px;
+	}
+
+	.center>.divfotoTesto>.descrizione {
+		font-size: 20px;
+	}
+
+	.center>.divfotoTesto {
+		font-size: 18px;
+	}
+
+	.timeline {
+		margin-left: 300px;
+	}
+
+	.timeline-event-thumbnail {
+		font-size: 20px;
+	}
+
+	.descrizioneTemporale {
+		font-size: 18px;
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	/* portatili */
+	.navigationalButton>.a {
+		font-size: 18px;
+	}
+
+	.center {
+		width: 100%;
+	}
+
+	.center>.divfoto>.cornice {
+		height: 600px;
+	}
+
+	.center>.divfotoTesto {
+		width: 100%;
+		width: 495px;
+		height: 690px;
+	}
+
+	.center>.divfotoTesto>.descrizione {
+		font-size: 20px;
+	}
+
+	.center>.divfotoTesto {
+		font-size: 18px;
+	}
+
+	.timeline {
+		margin-left: 600px;
+	}
+
+	.timeline-event-thumbnail {
+		font-size: 20px;
+	}
+
+	.descrizioneTemporale {
+		font-size: 18px;
+	}
+
+}
