@@ -5,7 +5,7 @@
 }
 
 .timeline:before {
-	background-color: var(--white);
+	background-color: var(--TimelineBackgroundColor);
 	content: "";
 	margin-left: -10px;
 	position: absolute;
@@ -22,8 +22,8 @@
 .timeline-event-icon {
 	transition: transform 0.2s ease-in;
 	transform: rotate(45deg);
-	background-color: var(--black);
-	outline: 5px solid var(--white);
+	background-color: var(--TimelineEventIconBackgroundcolor);
+	outline: 5px solid var(--TimelineEventIconOutliner);
 	display: block;
 	margin: 0.1em 0.1em 0.1em -0.1em;
 	position: absolute;
@@ -35,11 +35,11 @@
 
 .timeline-event:hover .timeline-event-icon {
 	transform: rotate(-45deg);
-	background-color: #a83279;
+	background-color: var(--TimelineEventBackgroundcolor);
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-	box-shadow: inset 40em 0 0 0 #a83279;
+	box-shadow: inset 40em 0 0 0 var(--TimelineEventBackgroundcolor);
 }
 
 .timeline-event-copy {
@@ -56,10 +56,10 @@
 
 .timeline-event-thumbnail {
 	transition: box-shadow 0.5s ease-in 0.1s;
-	color: var(--white);
-	background-color: var(--black);
-	outline: 1px solid var(--white);
-	box-shadow: inset 0 0 0 0em #ef795a;
+	color: var(--TimelineEventThubnailsColor);
+	background-color: var(--TimelineEventThubnailsBackGroundcolor);
+	outline: 1px solid var(--TimelineEventThubnailsOutliner);
+	box-shadow: inset 0 0 0 0em var(--TimelineEventBoxShadow);
 	display: inline-block;
 	margin-bottom: 1.2em;
 	padding: 0.25em 1em 0.2em 1em;

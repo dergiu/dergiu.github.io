@@ -1,6 +1,29 @@
 :root {
-	--white: rgb(184, 182, 182);
-	--black: rgb(30, 30, 30);
+	--white: #b8b6b6;
+	--black: #1e1e1e;
+	--WhiteNotdarkMode: #e1e1e1;
+
+	--HeaderBackGroundColor: var(--black); 
+	--HeaderBoxShadow: var(--white);
+	--WhiteHeaderBoxShadow : #8783f5;
+	--HeaderNavigationalButtonBackkground: #ffffff;
+
+
+	--IndexBordoCorniceColor: #00000000;
+	--IndexOutlinerCorniceColor: var(--white);
+	--IndexBackgroundCornice1: #00000000;
+	--IndexBackgroundCornice2: var(--white);
+
+	--TimelineBackgroundColor: var(--white);
+	--TimelineEventBackgroundcolor: #a93279;
+	--TimelineEventIconBackgroundcolor: var(--black);
+	--TimelineEventIconOutliner: var(--white);
+	--TimelineEventThubnailsColor: var(--white);
+	--TimelineEventThubnailsBackGroundcolor: var(--black);
+	--TimelineEventThubnailsOutliner: var(--white);
+	--TimelineEventBoxShadow: #ef7a5d;
+	
+
 }
 
 * {
@@ -15,6 +38,6 @@ a {
 
 body {
 	font: normal 18px 'Open Sans', sans-serif;
-	background: var(--black);
+	background: var(--HeaderBackGroundColor);
 	color: var(--white);
 }

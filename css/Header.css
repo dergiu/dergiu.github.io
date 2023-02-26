@@ -3,8 +3,8 @@
 }
 
 .header {
-	background: var(--black);
-	box-shadow: 0 0 100px rgba(208, 208, 208, 0.663);
+	background: var(--HeaderBackGroundColor);
+	box-shadow: 0 0 100px var(--HeaderBoxShadow);
 }
 
 .header>.derGiu {
@@ -34,10 +34,135 @@
 	right: 0;
 	height: 2px;
 	transform: scaleX(0);
-	background: #ffffff;
+	background: var(--HeaderNavigationalButtonBackkground);
 	transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
 }
 
 .navigationalButton>.a:hover::after {
 	transform: scaleX(1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toggle-button-cover {
+	width: 100px;
+	height: 20px;
+	margin-right: 20px;
+	margin-left: auto;
+}
+
+.knobs,
+.layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.button {
+	position: relative;
+	width: 74px;
+	height: 36px;
+	margin: -20px auto 0 auto;
+}
+
+.button.r,
+.button.r .layer {
+	border-radius: 100px;
+}
+
+.checkbox {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.knobs {
+	z-index: 2;
+}
+
+.layer {
+	width: 100%;
+	background-color: #ebf7fc;
+	transition: 0.3s ease all;
+	z-index: 1;
+}
+
+/* Button 9 */
+#button-9 .knobs:before,
+#button-9 .knobs:after,
+#button-9 .knobs span {
+	position: absolute;
+	top: 4px;
+	width: 20px;
+	height: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	padding: 9px 4px;
+	border-radius: 50%;
+	transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-9 .knobs:before,
+#button-9 .knobs:after {
+	color: #fff;
+	z-index: 2;
+}
+
+#button-9 .knobs span {
+	left: 4px;
+	background-color: #03a9f4;
+	z-index: 1;
+}
+
+#button-9 .checkbox:checked+.knobs:before {
+	left: -24px;
+}
+
+#button-9 .checkbox:checked+.knobs:after {
+	right: 4px;
+}
+
+#button-9 .checkbox:checked+.knobs span {
+	left: 42px;
+	background-color: #f44336;
+}
+
+#button-9 .checkbox:checked~.layer {
+	background-color: #fcebeb;
 }
