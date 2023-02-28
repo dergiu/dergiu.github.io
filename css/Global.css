@@ -6,7 +6,12 @@
 	--HeaderBackGroundColor: var(--black); 
 	--HeaderBoxShadow: var(--white);
 	--WhiteHeaderBoxShadow : #8783f5;
-	--HeaderNavigationalButtonBackkground: #ffffff;
+	--HeaderNavigationalButtonBackkground: var(--white);
+	--CheckboxLayerBackgroundColor: var(--white);
+	--CheckboxKnobsAfter: var(--white);
+	--CheckboxKnobsSpanColor: var(--black);
+	--CheckboxCheckKnobs: var(--black);
+	--CheckboxCheckedLayer: #8783f5;
 
 
 	--IndexBordoCorniceColor: #00000000;

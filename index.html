@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>De Rosa Giuseppe</title>
-	<link rel="stylesheet" href="css/Global.css">
-	<link rel="stylesheet" href="css/Header.css">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/TimeLine.css">
-	<link rel="stylesheet" href="css/MediaQueryResponsive.css">
+	<head>
+		<title>De Rosa Giuseppe</title>
+		<link rel="stylesheet" href="css/Global.css">
+		<link rel="stylesheet" href="css/Header.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/TimeLine.css">
+		<link rel="stylesheet" href="css/MediaQueryResponsive.css">
 
-	<script src="/lib/toggleDarkMode.js"></script>
-	<script src="lib/header.js"></script>
-	<script src="lib/TimelineIndex.js"></script>
-</head>
+		<script src="/lib/toggleDarkMode.js"></script>
+		<script src="lib/header.js"></script>
+		<script src="lib/TimelineIndex.js"></script>
+	</head>
 
-<body>
-	<!--
+	<body>
 		<script type="text/javascript">
 			var wrapper = document.createElement("div");
 			wrapper.innerHTML = header;
@@ -23,67 +22,42 @@
 		</script>
 		<script>toggleListner();</script>
 		<script>darkModeSistema();</script>
-		-->
 
-	<main class="main">
-		<header class="header">
-			<div class="center">
-				<h1 class="derGiu">DerGiu</h1>
+
+
+		<div class="center">
+			<div class="divfoto">
+				<img class="cornice" src="/Foto/me.jpeg">
 			</div>
-			
-			<nav class="navigationalButton">
-				<a class="a" href="index.html">Home del sito</a>
-				<a class="a" href="Studi.html">Studi</a>
-				<a class="a" href="Progetti.html">Progetti</a>
-			</nav>
-			<!--<input type="checkbox" name="DarkModeToggle" id ="DarkModeToggle">-->
-			
-			
-			
-			<script>toggleListner();</script>
-		<script>darkModeSistema();</script>
-
-
-
-
-		</header>
-		
-	</main>
-
-
-	<div class="center">
-		<div class="divfoto">
-			<img class="cornice" src="/Foto/me.jpeg">
+			<div class="divfotoTesto">
+				<h2>Giuseppe De Rosa</h2><br>
+				<h3 class="descrizione">Ciao, mi chiamo R2l1c2VwcGU=. Sono nato nel 2001 a Eboli(SA). Fin da piccolo ho
+					sempre avuto una
+					passione per il “computer”.
+					Approccio nel mondo della programmazione
+					in terza media copiando progetti Arduino Online, non avendone uno ma discutendo degli sketch con il
+					prof.
+					In primo superiore decido di comprare Arduino UNO con alcuni componenti per progettare un circuito.
+					Presso l’istituto Mattei Fortunato Eboli(SA) fondiamo in primo luogo "Young Digital Team" poi rinominato
+					ed ingradito in "MultiSkills".
+					Proseguo gli studi presso l’Università degli Studi di Salerno dipartimento di Informatica
+					<br><br>
+					Ho sempre avuto la passione per la fotografia,
+					infatti dall’età di 16 anni seguo un fotografo di Eboli che mi permette di montare video
+					di lavori già consegnati, aiutandomi a crescere personalmente. <br><br><br>
+				</h3>
+			</div>
 		</div>
-		<div class="divfotoTesto">
-			<h2>Giuseppe De Rosa</h2><br>
-			<h3 class="descrizione">Ciao, mi chiamo R2l1c2VwcGU=. Sono nato nel 2001 a Eboli(SA). Fin da piccolo ho
-				sempre avuto una
-				passione per il “computer”.
-				Approccio nel mondo della programmazione
-				in terza media copiando progetti Arduino Online, non avendone uno ma discutendo degli sketch con il
-				prof.
-				In primo superiore decido di comprare Arduino UNO con alcuni componenti per progettare un circuito.
-				Presso l’istituto Mattei Fortunato Eboli(SA) fondiamo in primo luogo "Young Digital Team" poi rinominato
-				ed ingradito in "MultiSkills".
-				Proseguo gli studi presso l’Università degli Studi di Salerno dipartimento di Informatica
-				<br><br>
-				Ho sempre avuto la passione per la fotografia,
-				infatti dall’età di 16 anni seguo un fotografo di Eboli che mi permette di montare video
-				di lavori già consegnati, aiutandomi a crescere personalmente. <br><br><br>
-			</h3>
+
+		<br><br>
+
+		<div>
+			<script type="text/javascript">
+				var wrapper = document.createElement("div");
+				wrapper.innerHTML = timeline;
+				document.body.appendChild(wrapper);
+			</script>
 		</div>
-	</div>
-
-	<br><br>
-
-	<div>
-		<script type="text/javascript">
-			var wrapper = document.createElement("div");
-			wrapper.innerHTML = timeline;
-			document.body.appendChild(wrapper);
-		</script>
-	</div>
-</body>
+	</body>
 
 </html>
